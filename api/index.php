@@ -1,3 +1,2 @@
 <?php
-
-require __DIR__ . '/../public/index.php';
+echo "Laravel API berjalan di Vercel";
