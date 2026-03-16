@@ -28,11 +28,8 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 // halaman dashboard setelah login
 Route::get('/welcomeafterlogin', function () {
-    return view('welcomeafterlogin');
+return view('welcomeafterlogin');
 })->name('welcomeafterlogin');
-
-// Route untuk logout
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 // Halaman utama dan lainnya
 Route::get('/', fn() => view('welcome'));
